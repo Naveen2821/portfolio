@@ -1,0 +1,25 @@
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.page-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+section {
+  position: relative;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .page-container {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+}

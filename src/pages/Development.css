@@ -1,0 +1,377 @@
+
+.development-page {
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+}
+
+/* HERO */
+
+.dev-hero {
+  min-height: 700px;
+  height: calc(90vh - 64px);
+  max-height: 900px;
+  padding: 100px 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #f5f5f7;
+}
+
+.dev-hero-content {
+  max-width: 1050px;
+}
+
+.dev-eyebrow {
+  color: #86868b;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 28px;
+}
+
+.dev-hero h1 {
+  font-size: clamp(65px, 11vw, 135px);
+  font-weight: 750;
+  line-height: 0.98;
+  letter-spacing: -8px;
+  color: #171717;
+}
+
+.dev-hero h1 span {
+  color: #0071e3;
+}
+
+.dev-hero-description {
+  max-width: 570px;
+  margin: 32px auto;
+  color: #6e6e73;
+  font-size: 19px;
+  line-height: 1.8;
+}
+
+.dev-scroll-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #0071e3;
+  text-decoration: none;
+  font-size: 15px;
+  transition: gap 0.3s ease;
+}
+
+.dev-scroll-link:hover {
+  gap: 15px;
+}
+
+/* SKILLS */
+
+.dev-skills {
+  padding: 120px 9%;
+  background: #050505;
+  color: white;
+}
+
+.dev-skills-inner {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 80px;
+}
+
+.dev-skills h2,
+.dev-projects-heading h2 {
+  font-size: clamp(45px, 6vw, 76px);
+  line-height: 1.08;
+  letter-spacing: -4px;
+  margin-bottom: 25px;
+}
+
+.dev-skills h2 span {
+  color: #777;
+}
+
+.dev-skills-description {
+  max-width: 440px;
+  color: #aaa;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.dev-skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.dev-skill-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 20px;
+  border: 1px solid #333;
+  border-radius: 30px;
+  color: #eee;
+  font-size: 14px;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.dev-skill-tag:hover {
+  background: white;
+  color: #111;
+  border-color: white;
+  transform: translateY(-3px);
+}
+
+/* PROJECTS */
+
+.dev-projects {
+  padding: 125px 8%;
+  background: #fff;
+}
+
+.dev-projects-heading {
+  max-width: 1200px;
+  margin: 0 auto 65px;
+}
+
+.dev-projects-heading h2 {
+  color: #171717;
+}
+
+.dev-projects-heading h2 span {
+  color: #888;
+}
+
+.dev-projects-heading > p:last-child {
+  max-width: 550px;
+  color: #777;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.dev-project-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 25px;
+}
+
+.dev-project-card {
+  min-height: 390px;
+  border-radius: 26px;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.dev-project-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.12);
+}
+
+.project-dark {
+  background: #101010;
+  color: white;
+}
+
+.project-light {
+  background: #f5f5f7;
+  color: #171717;
+}
+
+.project-blue {
+  background: #eaf3ff;
+  color: #171717;
+}
+
+.dev-project-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dev-project-top span {
+  font-size: 11px;
+  letter-spacing: 2px;
+  opacity: 0.6;
+}
+
+.dev-project-content {
+  margin-top: 65px;
+}
+
+.dev-project-category {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  opacity: 0.6;
+  margin-bottom: 15px;
+}
+
+.dev-project-card h3 {
+  font-size: clamp(32px, 4vw, 48px);
+  letter-spacing: -2px;
+  margin-bottom: 15px;
+}
+
+.dev-project-description {
+  max-width: 450px;
+  font-size: 15px;
+  line-height: 1.8;
+  opacity: 0.72;
+  margin-bottom: 25px;
+}
+
+.dev-project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.dev-project-tech span {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 13px;
+  border: 1px solid currentColor;
+  border-radius: 20px;
+  font-size: 11px;
+  opacity: 0.7;
+  white-space: nowrap;
+}
+
+/* GITHUB */
+
+.dev-github {
+  padding: 120px 8%;
+  text-align: center;
+  background: #050505;
+  color: white;
+}
+
+.dev-github > div {
+  max-width: 800px;
+  margin: auto;
+}
+
+.dev-github > div > svg {
+  margin-bottom: 30px;
+}
+
+.dev-github h2 {
+  font-size: clamp(45px, 7vw, 82px);
+  line-height: 1.08;
+  letter-spacing: -4px;
+  margin-bottom: 25px;
+}
+
+.dev-github h2 span {
+  color: #888;
+}
+
+.dev-github > div > p:not(.dev-eyebrow) {
+  max-width: 530px;
+  margin: 0 auto 30px;
+  color: #aaa;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.dev-github-button,
+.dev-contact-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 14px 25px;
+  border-radius: 30px;
+  background: #0071e3;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.dev-github-button:hover,
+.dev-contact-button:hover {
+  background: #005bb8;
+  transform: translateY(-3px);
+}
+
+/* CONTACT */
+
+.dev-contact {
+  padding: 120px 8%;
+  text-align: center;
+  background: #f5f5f7;
+  color: #171717;
+}
+
+.dev-contact h2 {
+  font-size: clamp(42px, 6vw, 75px);
+  letter-spacing: -4px;
+  line-height: 1.1;
+  margin-bottom: 35px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+  .dev-skills-inner {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .dev-project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dev-project-card {
+    min-height: 350px;
+  }
+}
+
+@media (max-width: 600px) {
+  .dev-hero {
+    min-height: 620px;
+    height: auto;
+    padding: 100px 7%;
+  }
+
+  .dev-hero h1 {
+    font-size: clamp(53px, 12vw, 75px);
+    letter-spacing: -4px;
+  }
+
+  .dev-hero-description {
+    font-size: 16px;
+  }
+
+  .dev-skills,
+  .dev-projects,
+  .dev-github,
+  .dev-contact {
+    padding: 85px 7%;
+  }
+
+  .dev-skills h2,
+  .dev-projects-heading h2,
+  .dev-github h2,
+  .dev-contact h2 {
+    letter-spacing: -2px;
+  }
+
+  .dev-project-card {
+    padding: 27px;
+    min-height: 370px;
+  }
+}
